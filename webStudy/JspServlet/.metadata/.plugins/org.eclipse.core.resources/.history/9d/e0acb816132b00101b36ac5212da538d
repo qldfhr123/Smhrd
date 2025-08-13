@@ -1,0 +1,13 @@
+package com.smhrd.controller;
+
+import java.net.http.HttpResponse;
+
+import javax.servlet.http.HttpServletRequest;
+
+public interface Controller {
+	
+	public String execute(HttpServletRequest request, HttpResponse response);
+	
+	
+
+}

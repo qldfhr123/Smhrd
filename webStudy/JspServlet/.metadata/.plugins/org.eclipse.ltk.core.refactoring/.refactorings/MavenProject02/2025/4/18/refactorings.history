@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Join.html&apos; to &apos;Join.html&apos;&#x0D;&#x0A;- Original project: &apos;MavenProject02&apos;&#x0D;&#x0A;- Destination element: &apos;Join.html&apos;&#x0D;&#x0A;- Original element: &apos;Join.html&apos;" description="Copy file" element1="src/main/webapp/Join.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1745976430165" target="/MavenProject02/src/main/webapp/Join.html" units="0" version="1.0"/>
+</session>

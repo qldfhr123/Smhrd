@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container {
+            background-color: azure;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-basis: 15%;
+        }
+        .item > img{
+            width: 50%;
+        }
+        .item2{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-basis: 70%;
+        }
+        .item2 :nth-child(2){
+            margin: 0 50px;
+        }
+        .item3{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-basis: 15%;
+        }
+        .item3 > a{
+            padding: 0 10px;
+        }
+        
+        a {
+            color: blueviolet;
+            text-decoration: none;
+         }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <img src="" alt="">
+        </div>
+        <div class="item2">
+            <a href="#">게시판</a>
+            <a href="#">소식</a>
+            <a href="#">문의하기</a>
+        </div>
+        <div class="item3">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>

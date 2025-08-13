@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+
+    <button id="like">👍👍</button>
+    <button id="dislike">👎👎</button>
+
+
+    <script>
+        // 사용자가 좋아요 +1 하고 다시대입
+        // 싫어요 기존값 -1 하고 다시 대입
+        // 좋아요 숫자가 0이하로 내려가지않게
+        
+        let pp = document.getElementsByTagName("p");
+
+        let like = document.getElementById("like");
+        let dislike = document.getElementById("dislike");
+
+        let count = 0;
+
+        like.addEventListener("click", function () {
+            count += 1;
+            pp.innerHTML = count; 
+        })
+
+        dislike.addEventListener("click", function () {
+            if (count > 0) {
+                count -= 1;
+                pp.innerHTML = count;
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>

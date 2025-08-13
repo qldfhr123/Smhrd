@@ -1,0 +1,13 @@
+package com.smhrd.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/** 주소를 사용하여 FrontController 에서 페이지를 이동 */
+public interface Controller {
+	
+	public String execute(HttpServletRequest request, HttpServletResponse response);
+	
+	
+
+}

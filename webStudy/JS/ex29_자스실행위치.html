@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1>21424231213<span>금요일</span></h1>
+    <!-- 인라인 스크립트 : 태그 안에 이벱트 속성을 사용햐서 특정 이벤트가 발생했을때 간단한 로직실행가능! -->
+    <button onclick="alert('버튼클릭')">클릭!</button>
+
+
+
+    <!-- 외부 스크립트  >> 스크립트 태그안에 코드작성 불가능 -->
+    <script src="ex29.js"></script>
+
+    <script>
+        // 내부 스크립트 : HTML 파일 안에 script 태그를 사용해서 코드작성 head / body 작성위치에 따라서 실행 순서나 브라우저 렌더링 영향
+        console.log("ㄴㅂ ㅅㅋㄾ");
+        ck();
+    </script>
+
+    <script>
+        // 1. 선택자 에 해당하는 요소의 content 조회
+        console.log( $("h1").html() ); // >> innerHTML
+        console.log( $("h1").html().text() ); // >> textcontent
+        // 2. content 내용 변경
+        $("h1").html("<span>내용내용1</span>내용")
+        $("h1").text("<span>내용내용2</span>내용")
+
+        // h 선택자에 해당하는 요소
+        //  1. 스타일을 변경
+        $("h1").css('color','blue'); // >> 스타일속성,  값
+    
+        // 2. 다중 스타일 제어
+        // 2-1. 메소드 체인
+        $("h1").css('color','blue').css('font-family','궁서체').css('font-size','15px');
+
+        // 2-2. js객체 형태로 스타일 적용
+        $("h1").css({
+            "color" : "red",
+            "background-color" : "pink"
+        });
+
+        // 2-3 js객체 형태로 스타일 적용 시키기
+        // 스타일 속성명 카멜식으로 작성시 스타일 속성명따옴표 생략
+        $("h1").css({
+            "backgroundColor" : "blue"
+        });
+    </script>
+
+</body>
+</html>

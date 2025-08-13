@@ -1,0 +1,25 @@
+package 이중for문;
+
+import java.util.Scanner;
+
+public class za_math_factorial {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("입력 : ");
+		int factorial_Num = sc.nextInt();
+		int muiltp = 1;
+		int sum = 0;
+		
+		for(int i = 1; i<=factorial_Num;i++) {
+			
+			muiltp = i*i;
+			sum = muiltp+muiltp;
+			System.out.println(sum);
+		}
+		
+	}
+
+}

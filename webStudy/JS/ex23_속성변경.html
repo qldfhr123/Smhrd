@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="ipt">
+
+    <button id="btn">입력</button>
+    <duv id="area"></duv>
+
+
+    <script>
+        // 사용자가 input 내용을 적고 버튼을 누르면 
+        // area 사용자의 입력값을 추가
+        let ipt = document.getElementById("ipt");
+        let btn = document.getElementById("btn");
+        let area = document.getElementById("area");
+
+        btn.addEventListener("click", function () {
+            // .value : input태그의 value 속성에 저의돤 값
+            let data = ipt.value;
+            area.innerHTML += "<p>" + data + "</p>";
+            // input 태그 안 비우기
+            ipt.value = "";
+        })
+
+        // 이벤트가 발생하묜 이벤트함수애 매개변수로
+        // 이벤트객체가 들어옴 (이벤트에 대한 모든 정보)
+        // keydown키보드 이벤트가 발생하면 keyCode 사용해서 특정 키보드 값을 이용해 이벤트처리할수있다
+        ipt.addEventListener("keydown", function (e) {
+    
+            if (e.key == "Enter") {
+                let data = ipt.value;
+                area.innerHTML += "<p>" + data + "</p>";
+                // input 태그 안 비우기
+                ipt.value = "";
+            }
+        })
+
+    </script>
+</body>
+
+</html>

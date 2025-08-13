@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let num = Math.random()
+
+        // 1 100 사이의점수를 받고 싶다면
+        let num2 = parseInt( Math.random() * 100 + 1)
+
+
+        //  1 10 랜덤 수 만들기
+        let num3 = parseInt( Math.random() * 10 + 1)
+        
+     
+        while(true){
+            let user_N = Number(prompt("수를 입력하세요"))
+            
+            if(user_N < num3){
+                alert("정답보다 작습니다!");
+            }
+            else if(user_N > num3){
+                alert("정답보다 큽니다");
+            }
+
+            else if(user_N == num3){
+                alert("정답입니다");
+                break;
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

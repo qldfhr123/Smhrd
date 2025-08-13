@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background-color: rgb(130, 0, 0);
+            position: static;
+        }
+        .box2 {
+            background-color: rgb(160, 0, 0);
+            position: relative;
+            left: 100px;
+        }
+        .box3 {
+            background-color: rgb(190, 0, 0);
+            position: absolute;
+            /* body 8px 포함 */
+            left: 208px;
+        }
+        .box4 {
+            background-color: rgb(220, 0, 0);
+            position: fixed;
+            top:308px;
+            left: 308px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</body>
+</html>

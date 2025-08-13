@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: azure;
+            height: 500px;
+
+            /* 설정 */
+            display: flex;
+            /* 배치방향 */
+            /* 
+             메인축 가로
+             서브축 세로
+            */
+            flex-direction: row;
+            /* 
+             메인축 세로
+             서브축 가로
+            */
+            /* flex-direction: column; */
+
+            /* 메인축 정렬 */
+            justify-content: center;
+            /* 서브축 정렬 */
+            align-items: center;
+            /* 줄넘김 처리 */
+            flex-wrap: nowrap;
+
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            flex-basis: 15%;
+
+        }
+        .container :nth-child(2) {
+            flex-basis: 70%;
+        }
+        .container :nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        .container :nth-child(1):hover {
+            background-color: red;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .container :nth-child(2):hover {
+            background-color: orange;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .container :nth-child(3):hover {
+            background-color: yellow;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

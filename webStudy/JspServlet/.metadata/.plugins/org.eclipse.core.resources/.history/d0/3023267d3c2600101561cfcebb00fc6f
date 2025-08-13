@@ -1,0 +1,36 @@
+package com.smhrd.database;
+
+import java.io.IOException;
+import java.io.Reader;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+
+public class SqlSessionManager {
+	
+	// DB설정 정보를 가져옴
+	static SqlSessionFactory sqlSessionFactory;
+	
+	/** 클래스 로딩할때 한번만 수행 */
+	static {
+		// 작성된 db정보를 가지고 실제로 db에 연결후 session 생성할 factroy만들기
+		String resource = "com/smhrd/database/mybatis-config.xml";
+		
+		try {
+			Reader reader = Resources.getResourceAsReader(resource);
+			// reader에 작성된 DB정보를 가지고 세션 빌드
+			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	//dao사용하기 위해서 sqlsessionfacrory 반환
+	public static SqlSessionFactory getSqlsessionFactory() {
+		return sqlSessionFactory;
+	}
+	
+	
+
+}

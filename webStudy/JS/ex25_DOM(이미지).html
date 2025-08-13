@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ipt">
+    <button id="btn">적용</button>
+    <br>
+    <img src="../HTML/img/구글.png" id="img">
+
+    <script>
+        let img = document.getElementById("img");
+        let ipt = document.getElementById("ipt");
+
+        ipt.addEventListener("keydown", function(e) {
+            if (e.key == "Enter") {
+                let value = ipt.value;
+                
+                if(value == "강아지") {
+                    img.src = "../HTML/img/다운로드 (5).jpg";
+                } else if(value == "고양이") {
+                    img.src = "../HTML/img/다운로드.jpg";
+                } else {
+                    img.src = "../HTML/img/구글.png";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>색변경</h1>
+    <button>클릭</button>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+
+    <script>
+        // 제이쿼리 이벤트 적용법
+        // .on(이벤트종류, 함수)
+        $("button").on("click", function () {
+            $("h1").css("color", "red");
+            setTimeout(function () {
+                $("h1").text("색변경").css("color", "black");
+            }, 2000);
+        })
+
+        // h1에 마우스가 올라가면 글씨 변경 >> 마우스 올렸습니다 >> 빨강
+        $("h1").on("mouseover", function () {
+            $(this).text("마우스를 올렸습니다");
+            $(this).css("color", "red");
+        })
+
+        // 벗어나면 마우스를 떼셨네요 변경 >> 파랑
+        $("h1").on("mouseout", function () {
+            $(this).text("마우스를 떼셨네요").css("color", "blue");
+            setTimeout(function () {
+                $("h1").text("색변경").css("color", "black");
+            }, 1500);
+        })
+
+        // 화살표 함수는 target 정해주기
+
+
+    </script>
+</body>
+
+</html>

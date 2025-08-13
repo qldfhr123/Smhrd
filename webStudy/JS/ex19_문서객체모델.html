@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">tttttt</h1>
+    <p>12341512323</p>
+    <span class="sp">w</span>
+    <span class="sp">wwww</span>
+    <span class="sp">wwwwww</span>
+
+
+
+
+    <script>
+        // 요소 자체를 리턴 Element
+        // document. >> 접근해서 getElement >>요소에 가져온다
+        // ById (title) "title"이라는 id  가져온다
+        let title = document.getElementById("title");
+        console.log(title);
+
+        // p 라는 태그명을 가진 요소들을 전분 조회해서 
+        // HTMLCollection 배열 형태를 리턴
+        let pp = document.getElementsByTagName("p");
+        // pp는 배열 팔요하면 인덱스 번호를 작성해서 접근해야한다
+        console.log(pp);
+        
+        // ByClassName (sp) "sp"이라는 전부조회해서 유사배열 형태로 리턴된 객체를 저장
+        // 바로 인덱스 2번째 요소 접근해서 사용할수있다 (0 부터 시작)
+        
+        let sp = document.getElementsByClassName("sp")[2];
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = Number(prompt("과목 수 입력하세요"));
+        let sub = []
+        for (let i = 0; i < num; i++) {
+            sub.push(prompt("과목 입력하세요"));
+        }
+        let score = [];
+        for (let i = 0; i < num; i++) {
+            score.push(prompt(sub[i] + " 의 점수 입력하세요"));
+        }
+
+        console.log(sub);
+        console.log(score);
+
+        let resultHTML = "";
+        resultHTML += '<table border = "1px solid black"><tr>';
+        for (let i = 0; i < sub.length; i++) {
+            resultHTML += "<td>";
+            resultHTML += sub[i];
+            resultHTML += "</td>";
+        }
+
+        resultHTML += "<td>총합</td><td>평균</td>";
+        resultHTML+= "</tr><tr>";
+        let sum = 0;
+        for (let i = 0; i < score.length; i++) {
+            sum += Number(score[i]);  
+            resultHTML += '<td>'
+            resultHTML+=  score[i]
+            resultHTML += "</td>";
+        }
+
+        let avg = sum / score.length;
+        resultHTML += "<td>" + sum + "</td><td>" + parseInt(avg) + "</td>";
+        resultHTML += "</tr></table>";
+        
+        document.write(resultHTML);
+
+
+    </script>
+
+</body>
+
+</html>

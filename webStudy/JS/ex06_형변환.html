@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        let age = prompt("나이??!");
+        // 문자열 >> 숫자 변환
+        console.log("변환 전 ",age);
+        /** 변하지 않는다 재할당 해주자 */
+        console.log("변환 후 ",Number(age));
+         
+        // parseInt(), parseFloat() 사용가능
+        // >>> 자료형은 전부 다 number 
+
+        let num = 3.14
+        console.log("변환 전",num);
+        console.log("변환 후",parseInt(num));
+        
+        // 숫자가 될 수 없는 데이터를 변환 하면 NaN
+        // >>>>> 다시 체크하자
+        
+
+        // 숫자를 문자로 바꿔보자!
+        // toString
+        let num1 = 3.14;
+        console.log(num1.toString());
+        
+
+
+
+    </script>
+    
+</body>
+</html>

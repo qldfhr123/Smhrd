@@ -1,0 +1,11 @@
+package com.smhrd.controller;
+
+
+public interface Controller {
+	
+	public String execute() {
+		
+	}
+	
+
+}

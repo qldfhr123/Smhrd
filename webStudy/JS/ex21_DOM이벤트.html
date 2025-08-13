@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">내용 변경 전!</p>
+    <button id="btn">클릭</button>
+    
+
+    <script>
+
+        // 버튼에 이번트를 적용하는법
+        // (이벤트 : 사용자가 브라우저에 동작하는 행위 >> 클릭, 스크롤, 마우스올리기, 키보드 입력)
+        // addEbentListener( 이벤트종류, 이벤트 핸들러(콜백함수) );
+        // 콜백함수 : 이벤트가 발행했을 때  처리하는 함수
+
+        let btn = document.getElementById("btn");
+
+        // 이벤트를 정의
+        // 클릭 이벤트가 실행시 alert 실행
+        btn.addEventListener("click",function() {
+            alert("클릭이벤트 발생");
+        })
+
+        // p 태그 클릭하면 console창에 p클릭됨 출력
+        let text = document.getElementById("text");
+        let pp = document.getElementsByTagName("p")
+        pp[0].addEventListener("cilck",function() {
+            console.log("p클릭됨!!");
+            
+        })
+
+        text.addEventListener("cilck",function() {
+            console.log("p클릭됨!!");
+            
+        })
+
+        // 버튼 더블클릭하면 console 더블클릭이벤트 발생
+        let body = document.getElementsByTagName("body")[0];
+
+        const dbEvent = function(){
+            console.log("더블클릭 실행");
+            
+        }
+        /* 함수 호출시 () 빼고 작성하자 */
+        body.addEventListener("dblclick",dbEvent)
+
+
+    </script>
+</body>
+</html>

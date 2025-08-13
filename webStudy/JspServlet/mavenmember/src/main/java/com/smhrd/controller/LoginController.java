@@ -1,0 +1,45 @@
+package com.smhrd.controller;
+
+import java.io.UnsupportedEncodingException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.smhrd.model.MemberDAO;
+import com.smhrd.model.MemberVO;
+
+
+public class LoginController implements Controller {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		try {
+			request.setCharacterEncoding("UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+        String id = request.getParameter("Input_Id");
+        String pw = request.getParameter("Input_Pw");
+        
+        MemberVO member = new MemberVO(id,pw);
+        MemberDAO dao = new MemberDAO();
+        MemberVO result = dao.login(member); // 로그인 성공 시 member 객체 반환
+
+        if (result != null) {
+            // 로그인 성공
+            HttpSession session = request.getSession();
+            session.setAttribute("member", result);
+            session.setAttribute("userId", result.getId()); // 세션에서 아이디저장
+            
+//            response.sendRedirect("main.jsp"); // 로그인 후 메인 페이지로 이동
+            return "/main.jsp";
+        } else {
+        	return "/main.jsp";
+        }
+		
+	}
+}
+
+

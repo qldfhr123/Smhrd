@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        // 특정 목적 수행하기위해 독립적인 블록
+        // 함수를 정의할때 input output 로직 고려
+
+
+        // 함수 선언문, [함수 표현식, 화살표] 2가 최근에 가장 많이 쓰인다
+        // 1. 함수 선언문
+        function hello (){
+            console.log("ㅎㅇ");
+        }
+        hello();
+
+        // 2. 함수 표현식
+        // 함수를 값으로 취급
+        let play = function play (){
+            console.log("즐놀");
+        }
+        console.log(play);
+
+        let play2 = function(a){
+            console.log(a,"를");
+            
+        }
+
+        play2("게임");
+
+        // 3. 화살표
+        // 기본
+        let food1 = () => {
+            console.log("wss");
+        }
+        // 3-2 매개변수가 하나면 생략가능
+        // 매개변수 변수키워드 생략
+        let food2 = a => {
+            console.log("wss");
+        }
+    </script>
+    
+</body>
+</html>

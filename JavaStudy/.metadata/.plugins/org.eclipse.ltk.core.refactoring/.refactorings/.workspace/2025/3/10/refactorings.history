@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Ex00입출력과변수&apos; to &apos;Ex01입출력과변수&apos;" description="Rename resource &apos;Ex00입출력과변수&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Ex00입출력과변수" name="Ex01입출력과변수" stamp="1741052462068" updateReferences="true"/>
+</session>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div>div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        #static{
+            position: static;    
+        }
+        #relative{
+            position: relative;
+        }
+        #absolute{
+            position: absolute;
+            top: 100px;
+        }
+        #fixed{
+            position: fixed;
+        }
+
+    </style>
+</head>
+
+<body>
+    <span>111111</span>
+
+    <div id ="parents">
+        <span>22222</span>
+        <div id="static">
+            static
+        </div>
+        <div id="relative">
+            relative
+        </div>
+        <div id="absolute">
+            absolute
+        </div>
+        <div id="fixed">
+            fixed
+        </div>
+    </div>
+    
+    
+
+
+
+
+</body>
+</html>

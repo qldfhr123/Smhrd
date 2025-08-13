@@ -1,0 +1,18 @@
+package 이중for문;
+
+import java.util.Scanner;
+
+public class za_math_factorial {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("입력 : ");
+		int birthYear = sc.nextInt();
+		
+		
+
+	}
+
+}

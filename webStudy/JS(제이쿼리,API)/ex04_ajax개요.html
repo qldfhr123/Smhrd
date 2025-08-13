@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    
+    <script>
+
+        // ajax : 
+        // 서버에 처리를 기다리지 않고 비동기적은 요청가능
+        // - 페이지새로고침이 일어나지 않음
+        // 필요한부분만 새로운 데이터를 요청하면서 자원 시간 절약가능
+        // 너무 과도한 요청시 서버에 부하가생길수있다
+
+
+        $.ajax({
+            url : "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.xml",
+            type : "GET",
+            data : "서버로 보낼 데이터",
+            dataType : "응답받을 데이터 형식",
+            success : function(data){
+                // 서버로부터 요청받은 데이터가 매개변수로 들어옴
+            },
+            error : function() {
+                // 오류시
+            }
+            
+        })
+
+    </script>
+
+    
+
+
+    
+</body>
+</html>

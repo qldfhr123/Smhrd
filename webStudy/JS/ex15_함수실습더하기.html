@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let num1 = Number(prompt(" 첫번째 정수 입력"));
+        let num2 = Number(prompt(" 두번째 정수 입력"));
+
+        addNumber(num1,num2);
+        function addNumber(a,b){
+            console.log("두 수의 합계는 : ",a+b);
+        }
+
+        let addNumber2 = function addNumber22(a,b){
+             console.log("두 수의 합계는 : ",a+b);
+        }
+        addNumber2(num1,num2);
+
+        let addNumber3 = (a,b) => {
+            console.log("두 수의 합계는 : ",a+b);
+        }
+        addNumber3(num1,num2);
+
+        // 리턴값
+        let addNumber4 = function addNumber4(a,b){
+            return a+b
+        }
+        let result = addNumber4(num1,num2);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+    <br>
+    <br>
+    <button id="circle">원으로 만들기</button>
+    <button id="square">직사각형으로 만들기</button>
+
+    <script>
+        let box = document.getElementById("box")
+        // 요소 자체에 인라인 스타일로 작성된다 (명시도의 우선순위가 높다)
+        box.style.backgroundColor = "red";
+
+        // 초기화 함수 추가
+        function resetStyle() {
+            box.style.width = "100px";
+            box.style.height = "100px";
+            box.style.borderRadius = "0";
+            box.style.backgroundColor = "red";
+        }
+
+        let circle = document.getElementById("circle")
+        circle.addEventListener("click", function () {
+            resetStyle();  
+            box.style.borderRadius = "60%";
+            box.style.backgroundColor = "green";
+        })
+
+        let square = document.getElementById("square")
+        square.addEventListener("click", function () {
+            resetStyle();
+            box.style.height = "200px";
+            box.style.backgroundColor = "yellow";
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System.LoggerFinder"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="클래스객체기초.Person"/>
+    <fullyQualifiedTypeName name="학생정보관리프로그램.Student"/>
+    <fullyQualifiedTypeName name="포켓몬게임.Pokemon"/>
+    <fullyQualifiedTypeName name="닌텐도게임.Zelda"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="닌텐도게임.GameMain"/>
+    <fullyQualifiedTypeName name="닌텐도게임.Pokemongo"/>
+    <fullyQualifiedTypeName name="닌텐도게임.Mario"/>
+    <fullyQualifiedTypeName name="닌텐도게임.Gamechip"/>
+    <fullyQualifiedTypeName name="추상클래스.RegularEmployee"/>
+    <fullyQualifiedTypeName name="인터페이스.Temp"/>
+    <fullyQualifiedTypeName name="abstract_User.abstract_Temp"/>
+    <fullyQualifiedTypeName name="java.lang.instrument.UnmodifiableClassException"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.lang.ScopedValue"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Controller.Controller"/>
+    <fullyQualifiedTypeName name="javax.annotation.processing.SupportedSourceVersion"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="Model.MemberDTO"/>
+    <fullyQualifiedTypeName name="TEST.Train"/>
+    <fullyQualifiedTypeName name="TEST.Question"/>
+    <fullyQualifiedTypeName name="TEST.SmartPhone"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+</qualifiedTypeNameHistroy>

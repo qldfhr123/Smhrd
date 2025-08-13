@@ -1,0 +1,46 @@
+package com.smhrd.controller;
+
+import java.io.IOException;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.smhrd.model.MemberDAO;
+import com.smhrd.model.MemberVO;
+
+
+public class JoinController implements Controller {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		// join 데이터 뽑기
+				String id =request.getParameter("id");
+				String pw =request.getParameter("pw");
+				String tel =request.getParameter("tel");
+				String address =request.getParameter("address");
+				
+				MemberVO member = new MemberVO(id,pw,tel,address);
+				
+			
+				// dao 객체 생성 > join 실행 > 돌려주는 결과값이 따라서 마무리
+				MemberDAO dao = new MemberDAO();
+				int result = dao.join(member);
+				if(result>0) {
+					System.out.println("가입성공!");
+					HttpSession session = request.getSession();
+					session.setAttribute("member", member);
+					
+					RequestDispatcher rd = request.getRequestDispatcher("join_success.jsp");
+					rd.forward(request, response);			
+				} else{
+					System.out.println("가입 실패");
+					response.sendRedirect("main.jsp");
+				}
+		return null;
+	}
+
+}

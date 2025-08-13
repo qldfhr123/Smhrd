@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;Ex00입출력과변수/src/변수와자료형&apos;&#x0D;&#x0A;- Original project: &apos;Ex00입출력과변수&apos;&#x0D;&#x0A;- Destination element: &apos;Ex00입출력과변수/src/변수와자료형&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     입출력.Ex01변수.java&#x0D;&#x0A;     입출력.Ex02자료형.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;변수와자료형" element1="/src&lt;입출력{Ex01변수.java" element2="/src&lt;입출력{Ex02자료형.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1741052442680" units="2" version="1.0"/>
+</session>

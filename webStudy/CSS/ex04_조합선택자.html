@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 조합 선택자는 */
+        /* 그룹 선택자, 계층 선택자 , 반응 선택자 */
+        
+        body p {
+            color : red;
+        }
+        ul > li {
+            color : blue;
+        }
+        /* 인접형제 */
+        .one + li {
+            background-color: lemonchiffon;
+        }
+        p + p {
+            background-color: aqua;
+        }
+        /* 일반 형제 선택자 (후행)  */
+        p ~ p {
+            font-family: '궁서';
+        }
+        .one ~ li {
+            font-family: '고딕';
+        }
+        /* 반응 선택자 */
+        h1:hover{
+            color: chartreuse;
+        }
+        h1:active{
+            color: chocolate;
+        }
+        /* important는 명시도 많이 상승 시킬수있음 */
+        #only{
+            color: red !important;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1 class="only">999</h1>
+
+    
+    <p>1</p>
+    <ul>
+        <li class="one">2</li>
+        <li>3</li>
+        <li>4</li>
+        <p>????</p>
+    </ul>
+    <p>5</p>
+    <p>6</p>
+
+    
+
+</body>
+</html>
